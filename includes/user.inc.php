@@ -6,8 +6,9 @@ class User extends ConnDB {
     public function getAllUsers() {
         $stmt = $this->connect()->query("SELECT * FROM REF_ADMIN");
         while ($row = $stmt->fetch()) {
-            $admin_code = $row['admin_code'];
-            return
+
+            $admin_code = $row['ADMIN_CODE'];
+            return;
 
 
         }
